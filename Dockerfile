@@ -18,7 +18,7 @@ ENV HOST=localhost \
     MAIL_CANONICAL_DOMAINS='' \
     MAIL_NON_CANONICAL_PREFIX='' \
     MAIL_NON_CANONICAL_DEFAULT='' \
-    MESSAGE_SIZE_LIMIT = ''
+    MESSAGE_SIZE_LIMIT=''
 
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get upgrade -y && \
