@@ -44,7 +44,7 @@ RUN chmod a+rx /usr/local/bin/* && \
     /usr/sbin/postconf -e smtp_helo_name=\$myhostname.\$mydomain && \
     /usr/sbin/postconf -e virtual_maps='hash:/etc/postfix/virtual, regexp:/etc/postfix/virtual_regexp' && \
     /usr/sbin/postconf -e sender_canonical_maps=regexp:/etc/postfix/sender_canonical_regexp && \
-    /usr/sbin/postconf -e message_size_limit=20480000 && \
+    /usr/sbin/postconf -e message_size_limit=10240000 && \
     /usr/sbin/postconf compatibility_level=2 && \
     /usr/sbin/postmap /etc/postfix/sasl_passwd && \
     /usr/sbin/postmap /etc/postfix/virtual_regexp && \
